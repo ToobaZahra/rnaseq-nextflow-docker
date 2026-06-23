@@ -1,123 +1,74 @@
-Jun-23 08:51:52.137 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
-Jun-23 08:51:52.304 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
-Jun-23 08:51:52.470 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
-Jun-23 08:51:52.732 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-23 08:51:52.734 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-23 08:51:52.739 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Jun-23 08:51:52.997 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Jun-23 08:51:54.269 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Jun-23 08:51:54.278 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-23 08:51:54.432 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/rnaseq-nextflow-docker/nextflow.config
-Jun-23 08:51:54.449 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/rnaseq-nextflow-docker/nextflow.config
-Jun-23 08:51:54.476 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Jun-23 08:51:54.549 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Jun-23 08:51:55.565 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jun-23 08:51:55.566 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jun-23 08:51:55.595 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
-Jun-23 08:51:55.602 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@a9f023e] - activable => nextflow.secret.LocalSecretsProvider@a9f023e
-Jun-23 08:51:55.677 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [mighty_coulomb] - revision: 7ab8fd80a0
-Jun-23 08:51:55.888 [main] DEBUG nextflow.Session - Session UUID: 03089c4b-54a8-4562-9774-9fc1df7de643
-Jun-23 08:51:55.888 [main] DEBUG nextflow.Session - Run name: mighty_coulomb
-Jun-23 08:51:55.889 [main] DEBUG nextflow.Session - Executor pool size: 2
-Jun-23 08:51:55.901 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jun-23 08:51:55.910 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jun-23 08:51:56.102 [main] DEBUG nextflow.cli.CmdRun - 
+Jun-23 08:53:22.011 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jun-23 08:53:22.185 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
+Jun-23 08:53:22.231 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
+Jun-23 08:53:22.287 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-23 08:53:22.289 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-23 08:53:22.293 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jun-23 08:53:22.318 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jun-23 08:53:22.671 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jun-23 08:53:22.678 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-23 08:53:22.723 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/rnaseq-nextflow-docker/nextflow.config
+Jun-23 08:53:22.727 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/rnaseq-nextflow-docker/nextflow.config
+Jun-23 08:53:22.733 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jun-23 08:53:22.773 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jun-23 08:53:23.382 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-23 08:53:23.384 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-23 08:53:23.411 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jun-23 08:53:23.415 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@22a6e998] - activable => nextflow.secret.LocalSecretsProvider@22a6e998
+Jun-23 08:53:23.433 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [friendly_lavoisier] - revision: 2404d9fe76
+Jun-23 08:53:23.602 [main] DEBUG nextflow.Session - Session UUID: 5a4c11de-e57a-458f-96ec-8d1278ca46e2
+Jun-23 08:53:23.603 [main] DEBUG nextflow.Session - Run name: friendly_lavoisier
+Jun-23 08:53:23.606 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jun-23 08:53:23.619 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-23 08:53:23.636 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-23 08:53:23.685 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.4 build 12445
   Created: 17-06-2026 16:30 UTC 
   System: Linux 6.8.0-1052-azure
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.2+10-LTS
   Encoding: UTF-8 (UTF-8)
-  Process: 13348@codespaces-eb9f08 [127.0.0.1]
-  CPUs: 2 - Mem: 7.8 GB (132.4 MB) - Swap: 0 (0)
-Jun-23 08:51:56.341 [main] DEBUG nextflow.Session - Work-dir: /workspaces/rnaseq-nextflow-docker/work [ext2/ext3]
-Jun-23 08:51:56.342 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/rnaseq-nextflow-docker/bin
-Jun-23 08:51:56.356 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jun-23 08:51:56.374 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jun-23 08:51:56.380 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Jun-23 08:51:56.521 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jun-23 08:51:56.544 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
-Jun-23 08:51:56.730 [main] DEBUG nextflow.Session - Session start
-Jun-23 08:51:56.739 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-Jun-23 08:51:57.217 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jun-23 08:51:57.434 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-23 08:51:57.435 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-23 08:51:57.446 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jun-23 08:51:57.457 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
-Jun-23 08:51:57.462 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jun-23 08:51:57.549 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
-Jun-23 08:51:57.640 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-23 08:51:57.641 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-23 08:51:57.642 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'TRIMMOMATIC': maxForks=0; fair=false; array=0
-Jun-23 08:51:57.647 [main] DEBUG nextflow.Session - Process names: FASTQC, TRIMMOMATIC
-Jun-23 08:51:57.651 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
-Jun-23 08:51:57.662 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
-Jun-23 08:51:57.665 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *.fastq.gz; options: [:]
-Jun-23 08:51:57.666 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TRIMMOMATIC
-Jun-23 08:51:57.668 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Process: 14609@codespaces-eb9f08 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (124 MB) - Swap: 0 (0)
+Jun-23 08:53:23.724 [main] DEBUG nextflow.Session - Work-dir: /workspaces/rnaseq-nextflow-docker/work [ext2/ext3]
+Jun-23 08:53:23.725 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/rnaseq-nextflow-docker/bin
+Jun-23 08:53:23.870 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-23 08:53:23.904 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jun-23 08:53:23.920 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jun-23 08:53:24.038 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-23 08:53:24.051 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jun-23 08:53:24.146 [main] DEBUG nextflow.Session - Session start
+Jun-23 08:53:24.165 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jun-23 08:53:24.656 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-23 08:53:24.898 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-23 08:53:24.899 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-23 08:53:24.912 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-23 08:53:24.925 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Jun-23 08:53:24.929 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-23 08:53:25.030 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
+Jun-23 08:53:25.144 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-23 08:53:25.146 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-23 08:53:25.148 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'TRIMMOMATIC': maxForks=0; fair=false; array=0
+Jun-23 08:53:25.159 [main] DEBUG nextflow.Session - Process names: FASTQC, TRIMMOMATIC
+Jun-23 08:53:25.167 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Jun-23 08:53:25.225 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+Jun-23 08:53:25.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TRIMMOMATIC
+Jun-23 08:53:25.233 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *.fastq.gz; options: [:]
+Jun-23 08:53:25.234 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Main: /workspaces/rnaseq-nextflow-docker/main.nf
-Jun-23 08:51:57.668 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jun-23 08:51:57.668 [main] DEBUG nextflow.Session - Session await
-Jun-23 08:51:58.317 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-23 08:51:58.320 [Task submitter] INFO  nextflow.Session - [b0/6bba95] Submitted process > FASTQC (1)
-Jun-23 08:51:58.430 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-23 08:51:58.432 [Task submitter] INFO  nextflow.Session - [d9/6d1993] Submitted process > TRIMMOMATIC (1)
-Jun-23 08:52:12.031 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FASTQC (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/rnaseq-nextflow-docker/work/b0/6bba95b580324f3d56366685e96bf0]
-Jun-23 08:52:12.036 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jun-23 08:52:12.081 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=FASTQC (1); work-dir=/workspaces/rnaseq-nextflow-docker/work/b0/6bba95b580324f3d56366685e96bf0
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `fastqc_*` expected by process `FASTQC (1)`
-Jun-23 08:52:12.160 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FASTQC (1)'
-
-Caused by:
-  Missing output file(s) `fastqc_*` expected by process `FASTQC (1)`
-
-
-Command executed:
-
-  fastqc sample.fastq.gz
-
-Command exit status:
-  0
-
-Command output:
-  Analysis complete for sample.fastq.gz
-
-Command error:
-  Started analysis of sample.fastq.gz
-  Approx 5% complete for sample.fastq.gz
-  Approx 10% complete for sample.fastq.gz
-  Approx 15% complete for sample.fastq.gz
-  Approx 20% complete for sample.fastq.gz
-  Approx 25% complete for sample.fastq.gz
-  Approx 30% complete for sample.fastq.gz
-  Approx 35% complete for sample.fastq.gz
-  Approx 40% complete for sample.fastq.gz
-  Approx 45% complete for sample.fastq.gz
-  Approx 50% complete for sample.fastq.gz
-  Approx 55% complete for sample.fastq.gz
-  Approx 60% complete for sample.fastq.gz
-  Approx 65% complete for sample.fastq.gz
-  Approx 70% complete for sample.fastq.gz
-  Approx 75% complete for sample.fastq.gz
-  Approx 80% complete for sample.fastq.gz
-  Approx 85% complete for sample.fastq.gz
-  Approx 90% complete for sample.fastq.gz
-  Approx 95% complete for sample.fastq.gz
-  Approx 100% complete for sample.fastq.gz
-
-Work dir:
-  /workspaces/rnaseq-nextflow-docker/work/b0/6bba95b580324f3d56366685e96bf0
-
-Container:
-  biocontainers/fastqc:v0.11.9_cv8
-
-Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
-Jun-23 08:52:12.228 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `fastqc_*` expected by process `FASTQC (1)`
-Jun-23 08:52:12.323 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jun-23 08:52:12.399 [TaskFinalizer-1] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
-Jun-23 08:52:12.521 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=13.6s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
-Jun-23 08:52:12.701 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jun-23 08:52:12.702 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jun-23 08:52:12.708 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=13.6s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
-Jun-23 08:52:12.768 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jun-23 08:52:12.809 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Jun-23 08:53:25.239 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-23 08:53:25.239 [main] DEBUG nextflow.Session - Session await
+Jun-23 08:53:25.917 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-23 08:53:25.928 [Task submitter] INFO  nextflow.Session - [00/1f4a37] Submitted process > FASTQC (1)
+Jun-23 08:53:26.261 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-23 08:53:26.269 [Task submitter] INFO  nextflow.Session - [a1/68055c] Submitted process > TRIMMOMATIC (1)
+Jun-23 08:53:30.521 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: TRIMMOMATIC (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/rnaseq-nextflow-docker/work/a1/68055cb7e58f1aec8c9643aaba247c]
+Jun-23 08:53:30.525 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-23 08:53:33.498 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/rnaseq-nextflow-docker/work/00/1f4a37e580608a37f7ec133803bdb5]
+Jun-23 08:53:33.505 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-23 08:53:33.598 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-23 08:53:33.598 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-23 08:53:33.603 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jun-23 08:53:33.615 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11.7s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Jun-23 08:53:33.720 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-23 08:53:33.762 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jun-23 08:53:33.766 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

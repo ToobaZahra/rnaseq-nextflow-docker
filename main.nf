@@ -88,14 +88,30 @@ process FEATURECOUNTS {
     """
 }
 
+process MULTIQC {
+    container 'quay.io/biocontainers/multiqc:1.14--pyhdfd78af_0'
+
+    input:
+    path reports
+
+    output:
+    path "multiqc_report.html"
+
+    script:
+    """
+    multiqc .
+    """
+}
+
 workflow {
     reads = Channel.fromPath("data/*.fastq.gz")
     genome = file("genome/genome.fa")
     gtf = file("genome/genes.gtf")
 
-    FASTQC(reads)
+    fastqc_out = FASTQC(reads)
     trimmed = TRIMMOMATIC(reads)
     index = STAR_INDEX(genome, gtf)
     bam = STAR_ALIGN(trimmed, index)
-    FEATURECOUNTS(bam, gtf)
+    counts = FEATURECOUNTS(bam, gtf)
+    MULTIQC(fastqc_out.mix(counts).collect())
 }

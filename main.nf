@@ -72,6 +72,22 @@ process STAR_ALIGN {
     """
 }
 
+process FEATURECOUNTS {
+    container 'quay.io/biocontainers/subread:2.0.3--h7132678_1'
+
+    input:
+    path bam
+    path gtf
+
+    output:
+    path "counts.txt"
+
+    script:
+    """
+    featureCounts -a ${gtf} -o counts.txt ${bam}
+    """
+}
+
 workflow {
     reads = Channel.fromPath("data/*.fastq.gz")
     genome = file("genome/genome.fa")
@@ -80,5 +96,6 @@ workflow {
     FASTQC(reads)
     trimmed = TRIMMOMATIC(reads)
     index = STAR_INDEX(genome, gtf)
-    STAR_ALIGN(trimmed, index)
+    bam = STAR_ALIGN(trimmed, index)
+    FEATURECOUNTS(bam, gtf)
 }

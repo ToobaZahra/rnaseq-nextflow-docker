@@ -1,0 +1,146 @@
+Jun-22 07:14:28.843 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jun-22 07:14:28.978 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
+Jun-22 07:14:29.078 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
+Jun-22 07:14:29.394 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-22 07:14:29.395 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-22 07:14:29.401 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jun-22 07:14:29.690 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jun-22 07:14:30.602 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jun-22 07:14:30.614 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-22 07:14:30.673 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/rnaseq-nextflow-docker/nextflow.config
+Jun-22 07:14:30.678 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/rnaseq-nextflow-docker/nextflow.config
+Jun-22 07:14:30.691 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jun-22 07:14:30.730 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jun-22 07:14:31.874 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-22 07:14:31.875 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-22 07:14:31.896 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jun-22 07:14:31.900 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6edcad64] - activable => nextflow.secret.LocalSecretsProvider@6edcad64
+Jun-22 07:14:31.917 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [festering_davinci] - revision: ca55e0ec06
+Jun-22 07:14:32.081 [main] DEBUG nextflow.Session - Session UUID: 5d03eb20-b849-4a22-bbb5-3c3743daf542
+Jun-22 07:14:32.082 [main] DEBUG nextflow.Session - Run name: festering_davinci
+Jun-22 07:14:32.083 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jun-22 07:14:32.095 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-22 07:14:32.103 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-22 07:14:32.250 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.4 build 12445
+  Created: 17-06-2026 16:30 UTC 
+  System: Linux 6.8.0-1052-azure
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.2+10-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 15105@codespaces-eb9f08 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (199.1 MB) - Swap: 0 (0)
+Jun-22 07:14:32.383 [main] DEBUG nextflow.Session - Work-dir: /workspaces/rnaseq-nextflow-docker/work [ext2/ext3]
+Jun-22 07:14:32.386 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/rnaseq-nextflow-docker/bin
+Jun-22 07:14:32.411 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-22 07:14:32.438 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jun-22 07:14:32.449 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jun-22 07:14:32.615 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-22 07:14:32.628 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jun-22 07:14:32.698 [main] DEBUG nextflow.Session - Session start
+Jun-22 07:14:32.706 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jun-22 07:14:33.163 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-22 07:14:33.366 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-22 07:14:33.367 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-22 07:14:33.405 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-22 07:14:33.475 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Jun-22 07:14:33.484 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-22 07:14:33.561 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
+Jun-22 07:14:33.656 [main] DEBUG nextflow.Session - Process names: FASTQC
+Jun-22 07:14:33.659 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jun-22 07:14:33.671 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+Jun-22 07:14:33.672 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *.fastq.gz; options: [:]
+Jun-22 07:14:33.673 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /workspaces/rnaseq-nextflow-docker/main.nf
+Jun-22 07:14:33.673 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-22 07:14:33.673 [main] DEBUG nextflow.Session - Session await
+Jun-22 07:14:34.234 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-22 07:14:34.241 [Task submitter] INFO  nextflow.Session - [6c/b3b336] Submitted process > FASTQC (1)
+Jun-22 07:15:14.447 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/rnaseq-nextflow-docker/work/6c/b3b3361e1016991bea235385aa1668]
+Jun-22 07:15:14.449 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-22 07:15:14.476 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTQC (1); work-dir=/workspaces/rnaseq-nextflow-docker/work/6c/b3b3361e1016991bea235385aa1668
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `fastqc_*` expected by process `FASTQC (1)`
+Jun-22 07:15:14.554 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FASTQC (1)'
+
+Caused by:
+  Missing output file(s) `fastqc_*` expected by process `FASTQC (1)`
+
+
+Command executed:
+
+  fastqc sample.fastq.gz
+
+Command exit status:
+  0
+
+Command output:
+  Analysis complete for sample.fastq.gz
+
+Command error:
+  8f5e491552e6: Download complete
+  59856638ac9f: Download complete
+  0df3c64bb19a: Download complete
+  a66ab3a674d9: Download complete
+  473490461998: Download complete
+  e936d7784cf9: Download complete
+  374c558e71da: Download complete
+  18f922275a6f: Download complete
+  0e6dd20ee818: Download complete
+  9ff7e2e5f967: Download complete
+  9ff7e2e5f967: Pull complete
+  6f317d6d954b: Pull complete
+  a9dde5e2a643: Pull complete
+  675cac559d07: Pull complete
+  59856638ac9f: Pull complete
+  c86651a97b9e: Download complete
+  0e6dd20ee818: Pull complete
+  374c558e71da: Pull complete
+  4dfd8d164cc5: Pull complete
+  8f5e491552e6: Pull complete
+  0df3c64bb19a: Pull complete
+  473490461998: Pull complete
+  e936d7784cf9: Pull complete
+  a66ab3a674d9: Pull complete
+  dbd67cd33317: Pull complete
+  18f922275a6f: Pull complete
+  c86651a97b9e: Pull complete
+  Digest: sha256:82e5fa413d275a72c3de76e400a3d12a93ebdb4e1ef5391d7f7e9ce686671d8d
+  Status: Downloaded newer image for biocontainers/fastqc:v0.11.9_cv8
+  Started analysis of sample.fastq.gz
+  Approx 5% complete for sample.fastq.gz
+  Approx 10% complete for sample.fastq.gz
+  Approx 15% complete for sample.fastq.gz
+  Approx 20% complete for sample.fastq.gz
+  Approx 25% complete for sample.fastq.gz
+  Approx 30% complete for sample.fastq.gz
+  Approx 35% complete for sample.fastq.gz
+  Approx 40% complete for sample.fastq.gz
+  Approx 45% complete for sample.fastq.gz
+  Approx 50% complete for sample.fastq.gz
+  Approx 55% complete for sample.fastq.gz
+  Approx 60% complete for sample.fastq.gz
+  Approx 65% complete for sample.fastq.gz
+  Approx 70% complete for sample.fastq.gz
+  Approx 75% complete for sample.fastq.gz
+  Approx 80% complete for sample.fastq.gz
+  Approx 85% complete for sample.fastq.gz
+  Approx 90% complete for sample.fastq.gz
+  Approx 95% complete for sample.fastq.gz
+  Approx 100% complete for sample.fastq.gz
+
+Work dir:
+  /workspaces/rnaseq-nextflow-docker/work/6c/b3b3361e1016991bea235385aa1668
+
+Container:
+  biocontainers/fastqc:v0.11.9_cv8
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jun-22 07:15:14.658 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `fastqc_*` expected by process `FASTQC (1)`
+Jun-22 07:15:14.661 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-22 07:15:14.745 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-22 07:15:14.746 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-22 07:15:14.760 [TaskFinalizer-1] WARN  nextflow.util.SimpleAgent - Got an interrupted exception while taking agent result | java.lang.InterruptedException
+Jun-22 07:15:14.793 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=40.1s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jun-22 07:15:14.805 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=40.1s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jun-22 07:15:14.949 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-22 07:15:15.002 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
